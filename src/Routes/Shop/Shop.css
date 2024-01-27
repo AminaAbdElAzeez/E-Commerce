@@ -1,0 +1,47 @@
+.shop {
+    padding: 120px 0px 60px 0px;
+}
+.shop .products .container {
+    width: 100%;
+}
+.shop .modal .container {
+    width: 85%;
+    margin: auto;
+}
+.filter-btn {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter-btn button {
+    width: 170px;
+    height: 50px;
+    border: 3px solid crimson;
+    background-color: crimson;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0px 10px 30px 10px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: color 0.5s , background-color 0.5s;
+    -webkit-transition: color 0.5s , background-color 0.5s;
+    -moz-transition: color 0.5s , background-color 0.5s;
+    -ms-transition: color 0.5s , background-color 0.5s;
+    -o-transition: color 0.5s , background-color 0.5s;
+}
+.filter-btn button:hover {
+    color: crimson;
+    background-color: #fff;
+}
+@media only screen and (max-width:1080px) {
+    .filter-btn {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,40 @@
+.heading-title {
+    margin-bottom: 50px;
+}
+.heading-sub-title {
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #fff;
+    width: max-content;
+    position: relative;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.heading-sub-title:hover {
+    color:#FFEA20;
+}
+.heading-sub-title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    width: 40%;
+    height: 4px;
+    background-color: #FFEA20;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    -moz-transition: width 0.5s;
+    -ms-transition: width 0.5s;
+    -o-transition: width 0.5s;
+}
+.heading-sub-title:hover:after {
+    width: 100%;
+}
+@media only screen and (max-width:380px) {
+    .heading-sub-title {
+        font-size: 20px;
+    }
+  }

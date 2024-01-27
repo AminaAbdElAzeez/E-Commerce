@@ -1,0 +1,121 @@
+.testimonial {
+    margin-bottom: 130px;
+}
+.swiper.test {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .test .swiper-slide {
+    background: #fff;
+      justify-content: center;
+    align-items: flex-start;
+  }
+  .test .swiper-slide:first-of-type .slide-test {
+    background-color: rgb(160, 206, 52);
+  }
+  .test .swiper-slide:nth-of-type(2) .slide-test {
+    background-color: #559dd8;
+  }
+  .test .swiper-slide:nth-of-type(3) .slide-test {
+    background-color: rgb(223, 142, 36);
+  }
+  .test .swiper-slide:nth-of-type(4) .slide-test {
+    background-color: rgb(24, 185, 158);
+  }
+  
+  .test .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .test .swiper-slide ,
+  .test .swiper-slide:nth-child(2),
+  .test .swiper-slide:nth-child(3),
+  .test .swiper-slide:nth-child(4){
+    width: 65%;
+  }
+  .test .slide-test {
+    padding: 40px 30px;
+  }
+  .test .top-test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .test .top-test > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.test .star-test {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.test .star-test i {
+    margin-left: 7px;
+    font-size: 25px;
+    color: yellow;
+}
+.test .top-test + p {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #000;
+}
+.test .bottom-test {
+    text-align: left;
+}
+.test .bottom-test > h4 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 3px;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.test .bottom-test > h4:hover {
+    color: rgb(211, 26, 26);
+}
+.test .job {
+    font-size: 15px;
+    color: #4b4a4a;
+}
+@media only screen and (max-width:600px) {
+  .test .slide-test {
+        padding: 30px 20px;
+      }
+    .test .swiper-slide ,
+    .test .swiper-slide:nth-child(2),
+    .test .swiper-slide:nth-child(3),
+    .test .swiper-slide:nth-child(4){
+      width: 240px;
+    }
+    .test .top-test > img {
+        width: 60px;
+        height: 60px;
+    }
+    .test .star-test i {
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    .test .top-test + p {
+        font-size: 14px;
+    }
+    .test .bottom-test > h4 {
+        font-size: 18px;
+    }
+    .test .job {
+        font-size: 14px;
+    }
+}

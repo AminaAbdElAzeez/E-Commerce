@@ -1,0 +1,63 @@
+import { useContext, useEffect, useState } from 'react';
+import './Products.css';
+import Particle from '../../Components/Particle/Particle';
+import CartContext from '../../Components/Context/CartContext';
+import Modal from '../../Components/Modal/Modal';
+import HeadingTitle from '../../Components/HeadingTitle/HeadingTitle';
+
+const Products = () => {
+  const [search,setSearch] = useState("");
+  const [products,setProducts] = useState([]);
+  const [openModal,setOpenModal] = useState(false);
+  const [data,setData] = useState(null);
+  const {addToCart} = useContext(CartContext);
+
+  // Modal Handler 
+  const openModalHandler = (item) => {
+    setOpenModal(true);
+    setData(item)
+  }
+
+  useEffect(()=>{
+    fetchApi()
+  },[])
+
+  async function fetchApi(){
+    const response = await fetch('https://fakestoreapi.com/products');
+    const data = await response.json();
+    setProducts(data);
+}
+
+  return (
+    <section className='our-products'>
+      <Particle/>
+      <HeadingTitle title={"our products"}/>
+      <div className='container'>
+        <div className='product-search'>
+          <input value={search} onChange={(e)=>setSearch(e.target.value)} type='search' placeholder='Search in Products...' />
+        </div>
+        <div className='our-products-wrapper'>
+          {products.filter(a=>a.title.toLowerCase().includes(search)).map((product)=>(
+            <div key={product.id} className='our-product-item'>
+              <div className='img'>
+                <img src={product.image} alt={product.name}/>
+                <div className='our-product-item-icon'>
+                  <button onClick={()=>addToCart({...product,quantity:1})}>
+                    <i className="bi bi-cart-plus-fill"></i>
+                  </button>
+                  <button onClick={()=>openModalHandler(product)}>
+                    <i className="bi bi-eye-fill"></i>
+                  </button>
+                </div>
+              </div>
+              <h4 className='our-product-item-name'>{product.title.slice(0,12)}</h4>
+            </div>
+          ))}
+        </div>
+      </div>
+      {openModal && <Modal data={data} setOpenModal={setOpenModal}/>}
+    </section>
+  )
+}
+
+export default Products

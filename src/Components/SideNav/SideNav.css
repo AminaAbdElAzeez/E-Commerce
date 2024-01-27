@@ -1,0 +1,87 @@
+.sidebar-nav {
+    position: fixed;
+    bottom: 40px;
+    left: -151px;
+    z-index: 100;
+}
+.sidebar-list {
+    padding-left: -100%;
+}
+.sidebar-list li {
+  margin: 5px 0;
+  transform: translateX(-100%);
+  transition: transform 0.8s ease-in-out;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  -webkit-transition: transform 0.8s ease-in-out;
+  -moz-transition: transform 0.8s ease-in-out;
+  -ms-transition: transform 0.8s ease-in-out;
+  -o-transition: transform 0.8s ease-in-out;
+}
+.sidebar-list li a {
+  color: #fff;
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  transition: color 0.5s , margin-left 0.5s;
+  -webkit-transition: color 0.5s , margin-left 0.5s;
+  -moz-transition: color 0.5s , margin-left 0.5s;
+  -ms-transition: color 0.5s , margin-left 0.5s;
+  -o-transition: color 0.5s , margin-left 0.5s;
+}
+.sidebar-list li a:hover {
+  color: #FFEA20;
+  margin-left: 15px;
+}
+.sidebar-list li a i {
+  font-size: 25px;
+  margin-right: 5px;
+  color: #FFEA20;
+  transition: color 0.5s;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -ms-transition: color 0.5s;
+  -o-transition: color 0.5s;
+}
+.sidebar-list li a:hover >  i {
+  color : #fff;
+}
+.app-container.show-nav + .sidebar-nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+.sidebar-list li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+.sidebar-list li + li + li {
+    margin-left: 20px;
+  transform: translateX(-200%);
+}
+.sidebar-list li + li + li + li {
+  margin-left: 25px;
+  transform: translateX(-250%);
+  -webkit-transform: translateX(-250%);
+  -moz-transform: translateX(-250%);
+  -ms-transform: translateX(-250%);
+  -o-transform: translateX(-250%);
+}
+.sidebar-list li + li + li + li + li {
+  margin-left: 30px;
+  transform: translateX(-300%);
+  -webkit-transform: translateX(-300%);
+  -moz-transform: translateX(-300%);
+  -ms-transform: translateX(-300%);
+  -o-transform: translateX(-300%);
+}
+.sidebar-list li + li + li + li + li + li {
+  margin-left: 35px;
+  transform: translateX(-350%);
+  -webkit-transform: translateX(-350%);
+  -moz-transform: translateX(-350%);
+  -ms-transform: translateX(-350%);
+  -o-transform: translateX(-350%);
+}

@@ -1,0 +1,25 @@
+.rating i {
+    margin: 0px 2px 15px 0px;
+    display: inline-block;
+    color: rgb(236, 236, 47);
+
+}
+.rating span {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    color: #fff;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.rating span:hover,
+.rating span:hover b {
+    color: yellow;
+}
+.rating span b {
+    font-size: 18px;
+    color: crimson;
+}

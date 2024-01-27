@@ -1,0 +1,92 @@
+.services {
+    margin: 0px 0px 80px 0px;
+    height: auto;
+}
+.services-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 80px;
+    margin: 0px 15px 30px 15px ;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #fce6eb;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: box-shadow 0.5s;
+    -webkit-transition: box-shadow 0.5s;
+    -moz-transition: box-shadow 0.5s;
+    -ms-transition: box-shadow 0.5s;
+    -o-transition: box-shadow 0.5s;
+}
+.service-item:hover {
+    box-shadow: 10px 10px 15px 3px rgb(238, 126, 145), -10px -10px 10px 1px rgb(158, 158, 233);
+}
+.service-item > i {
+    font-size: 30px;
+    margin-right: 7px;
+    color: #f3af28;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.service-item:hover > i {
+    color: #0c66ee;
+}
+.service-item h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #003049;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.service-item:hover h4 {
+    color: #ce2b38;
+}
+.service-item:hover > i ,
+.service-item:hover h4 {
+    animation: focus-in-expand-top 0.8s ease-in-out 0s 1 normal none;
+    -webkit-animation: focus-in-expand-top 0.8s ease-in-out 0s 1 normal none;
+}
+@keyframes focus-in-expand-top {
+			
+    0% {
+        letter-spacing:-.5em;
+        transform:translateY(-300px);
+        filter:blur(12px);
+        opacity:0;
+    }
+    0% {
+        transform:translateY(0);
+        filter:blur(0);
+        opacity:1;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .service-item {
+        width: 100%;
+        padding: 10px;
+    }
+    .service-item > i {
+        font-size: 28px;
+    }
+    .service-item h4 {
+        font-size: 16px;
+    }
+  }
