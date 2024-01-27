@@ -1,14 +1,19 @@
 .modal {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    height: vh;
     background-color: rgba(0,0,0,0.7);
     z-index: 999;
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
 }
 .modal-content {
     width: 80%;
