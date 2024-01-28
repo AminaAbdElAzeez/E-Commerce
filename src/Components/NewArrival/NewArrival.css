@@ -1,5 +1,6 @@
 .new {
     margin-bottom: 100px;
+    position: relative;
 }
 .new .swiper {
     width: 100%;

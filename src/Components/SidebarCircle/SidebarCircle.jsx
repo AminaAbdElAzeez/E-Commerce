@@ -10,10 +10,10 @@ const SidebarCircle = ({handleClick}) => {
         <div className='sidebar-circle-wrapper'>
             <div className="circle-container">
                 <div className="circle">
-                    <button id="close" onClick={()=>handleClick()}>
+                    <button className="close" onClick={()=>handleClick()}>
                         <i className="bi bi-x"></i>
                     </button>
-                    <button id="open" onClick={()=>handleClick()}>
+                    <button className="open" onClick={()=>handleClick()}>
                         <i className="bi bi-list"></i>
                     </button>
                 </div>

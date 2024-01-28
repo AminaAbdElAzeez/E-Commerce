@@ -1,5 +1,6 @@
 .special {
     margin-bottom: 90px;
+    position: relative;
 }
 .swiper.special {
     width: 340px;

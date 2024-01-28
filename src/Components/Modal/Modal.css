@@ -1,15 +1,15 @@
 .modal {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     width: 100vw;
-    height: vh;
+    height: 100vh;
     background-color: rgba(0,0,0,0.7);
     z-index: 999;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-self: center;
     -webkit-transform: translate(-50%,-50%);
     -moz-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
@@ -18,6 +18,10 @@
 .modal-content {
     width: 80%;
     height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 70px 0;
     position: relative;
     background-color: #fff;
@@ -140,8 +144,14 @@
 .modal-add-to-cart-input {
     font-size: 25px;
     font-weight: 600;
-    padding: 1px 5px;
+    padding: 5px 10px;
     margin: 0px 15px 20px 0px;
+    border: 1px solid green;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .modal-add-to-cart-btn {
     border: 1px solid green;
@@ -255,7 +265,8 @@
         padding: 50px 0px;
     }
     .modal-add-to-cart-input {
-        font-size: 22px;
+        font-size: 21px;
+        padding: 5px;
     }
     .modal-content-info-link {
         font-size: 18px;

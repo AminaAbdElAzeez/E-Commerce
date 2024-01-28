@@ -2,6 +2,7 @@
     width: 100%;
     height: auto;
     padding: 120px 0px 60px 0px;
+    position: relative;
 }
 .product-search {
     margin: 30px 0 50px 0px;

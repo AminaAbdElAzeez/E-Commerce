@@ -12,10 +12,10 @@ import './Slider.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 // Slider Images
-import Image1 from '../../Assets/slide-1.jpg';
-import Image2 from '../../Assets/slide-2.jpg'
-import Image4 from '../../Assets/slide-4.jpg'
-import Image5 from '../../Assets/slide-5.jpg'
+import Image1 from '../../Assets/slide-1-min.webp'
+import Image2 from '../../Assets/slide-2-min.webp'
+import Image4 from '../../Assets/slide-4-min.webp'
+import Image5 from '../../Assets/slide-5-min.webp'
 
 const Slider = () => {
   return (

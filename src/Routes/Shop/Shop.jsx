@@ -45,12 +45,13 @@ const Shop = () => {
       <HeadingTitle title={"our store"}/>
       <div className='container'>
         <div className='filter-btn'>
-          <button type='button' onClick={()=>setItems(products)}>all products</button>
-          <button type='button' onClick={()=>filterItems("men's clothing")}>men's clothing</button>
+          <button type='button' onClick={()=>setItems(products)}>all</button>
+          <button type='button' onClick={()=>filterItems("men's clothing")}>men</button>
           <button type='button' onClick={()=>filterItems("jewelery")}>jewelery</button>
           <button type='button' onClick={()=>filterItems("electronics")}>electronics</button>
-          <button type='button' onClick={()=>filterItems("women's clothing")}>women's clothing</button>
+          <button type='button' onClick={()=>filterItems("women's clothing")}>women</button>
         </div>
+      </div>
         {toggle ? (
           <div className='products-wrapper'>
           {items.map((product)=>(
@@ -75,7 +76,6 @@ const Shop = () => {
         ) : (      
           <ProductsList products={products}/>
         )}
-      </div>
       {openModal && <Modal data={data} setOpenModal={setOpenModal}/>}
     </section>
   )

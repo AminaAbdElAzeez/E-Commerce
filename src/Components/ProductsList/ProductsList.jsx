@@ -17,27 +17,25 @@ const ProductsList = ({products}) => {
 
   return (
     <div className='products'>
-      <div className='container'>
-        <div className='products-wrapper'>
-          {products.map((product)=>(
-            <div className='product-item' key={product.id}>
-              <img src={product.image} alt="product-item"/>
-              <div className='product-item-layer'>
-                <h4>{product.title.slice(0,12)}</h4>
-                <span className='product-price'><b>Price: </b>${product.price}</span>
-                <Rating rating={product.rating["rate"]}/>
-                <button className='product-add-to-cart' onClick={()=>addToCart({...product,quantity:1})}>
-                  <i className="bi bi-cart-plus-fill"></i>
-                  Add to Cart
-                </button>
-                <button className='product-view' onClick={()=>openModalHandler(product)}>
-                  <i className="bi bi-eye-fill"></i>
-                  View
-                </button>
-              </div>
+      <div className='products-wrapper'>
+        {products.slice(0,10).map((product)=>(
+          <div className='product-item' key={product.id}>
+            <img src={product.image} alt="product-item"/>
+            <div className='product-item-layer'>
+              <h4>{product.title.slice(0,12)}</h4>
+              <span className='product-price'><b>Price: </b>${product.price}</span>
+              <Rating rating={product.rating["rate"]}/>
+              <button className='product-add-to-cart' onClick={()=>addToCart({...product,quantity:1})}>
+                <i className="bi bi-cart-plus-fill"></i>
+                Add to Cart
+              </button>
+              <button className='product-view' onClick={()=>openModalHandler(product)}>
+                <i className="bi bi-eye-fill"></i>
+                View
+              </button>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
       {openModal && <Modal data={data} setOpenModal={setOpenModal}/>}
     </div>

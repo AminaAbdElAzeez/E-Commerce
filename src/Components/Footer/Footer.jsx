@@ -37,7 +37,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <p>copyright © 2021. all rights reserved by<b> amina abdElAzeez</b></p>
+            <p>Created by<b> amina abdElAzeez</b></p>
         </div>
     </footer>
   )

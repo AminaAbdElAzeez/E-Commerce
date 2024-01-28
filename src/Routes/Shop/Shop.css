@@ -1,9 +1,10 @@
 .shop {
     padding: 120px 0px 60px 0px;
+    position: relative;
 }
-.shop .products .container {
+/* .shop .products .container {
     width: 100%;
-}
+} */
 .shop .modal .container {
     width: 85%;
     margin: auto;
@@ -11,18 +12,18 @@
 .filter-btn {
     margin-bottom: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .filter-btn button {
-    width: 170px;
+    width: 70px;
     height: 50px;
     border: 3px solid crimson;
     background-color: crimson;
     color: #fff;
     font-weight: 700;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 12px;
     margin: 0px 10px 30px 10px;
     text-transform: capitalize;
     border-radius: 10px;

@@ -1,6 +1,6 @@
 .sidebar-nav {
     position: fixed;
-    bottom: 40px;
+    top: 290px;
     left: -151px;
     z-index: 100;
 }

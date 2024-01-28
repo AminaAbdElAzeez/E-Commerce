@@ -1,9 +1,9 @@
 import './Support.css'
-import Img1 from '../../Assets/support-1.png'
-import Img2 from '../../Assets/support-2.png'
-import Img3 from '../../Assets/support-3 (1).png'
-import Img4 from '../../Assets/support-4.png'
-import Img5 from '../../Assets/support-5.png'
+import Img1 from '../../Assets/support-1-min.webp'
+import Img2 from '../../Assets/support-2-min.webp'
+import Img3 from '../../Assets/support-3 (1)-min.webp'
+import Img4 from '../../Assets/support-4-min-ezgif.com-jpg-to-webp-converter.webp'
+import Img5 from '../../Assets/support-5-min-ezgif.com-png-to-webp-converter.webp'
 
 
 

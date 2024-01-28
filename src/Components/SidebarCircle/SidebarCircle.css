@@ -67,11 +67,11 @@
     outline: none;
   }
   
-  .circle #open {
+  .circle .open {
     left: 60%;
   }
   
-  .circle #close {
+  .circle .close {
     top: 60%;
     transform: rotate(90deg);
     transform-origin: top left;

@@ -1,5 +1,6 @@
 .products {
     margin-bottom: 80px;
+    position: relative;
 }
 .products-wrapper {
     display: flex;

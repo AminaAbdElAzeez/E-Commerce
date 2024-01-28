@@ -1,8 +1,6 @@
 import './Testimonial.css';
-import Image1 from '../../Assets/01.webp';
-import Image2 from '../../Assets/5d578d6481cf25fa4e26624d2a0d003c.jpg';
-import Image3 from '../../Assets/02.webp';
-import Image4 from '../../Assets/bd973c8d8df301b7a263db2b3d677b46.jpg';
+import Image2 from '../../Assets/5d578d6481cf25fa4e26624d2a0d003c-min-ezgif.com-jpg-to-webp-converter.webp';
+import Image4 from '../../Assets/bd973c8d8df301b7a263db2b3d677b46-min-ezgif.com-jpg-to-webp-converter.webp';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
@@ -31,7 +29,7 @@ const Testimonial = () => {
             <SwiperSlide>
                 <div className='slide-test'>
                     <div className='top-test'>
-                        <img src={Image1} alt='testimonial'/>
+                        <img src={Image4} alt='testimonial'/>
                         <div className='star-test'>
                             <i className='bi bi-star-fill'></i>
                             <i className='bi bi-star-fill'></i>
@@ -73,7 +71,7 @@ const Testimonial = () => {
             <SwiperSlide>
                 <div className='slide-test'>
                     <div className='top-test'>
-                        <img src={Image3} alt='testimonial'/>
+                        <img src={Image4} alt='testimonial'/>
                         <div className='star-test'>
                             <i className='bi bi-star-fill'></i>
                             <i className='bi bi-star-fill'></i>
@@ -94,7 +92,7 @@ const Testimonial = () => {
             <SwiperSlide>
                 <div className='slide-test'>
                     <div className='top-test'>
-                        <img src={Image4} alt='testimonial'/>
+                        <img src={Image2} alt='testimonial'/>
                         <div className='star-test'>
                             <i className='bi bi-star-fill'></i>
                             <i className='bi bi-star-fill'></i>
