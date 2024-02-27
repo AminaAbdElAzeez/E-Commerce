@@ -1,6 +1,6 @@
 .sidebar-nav {
     position: fixed;
-    top: 280px;
+    top: 255px;
     left: -151px;
     z-index: 100;
 }
@@ -34,10 +34,10 @@
 }
 .sidebar-list li a:hover {
   color: #FFEA20;
-  margin-left: 15px;
+  margin-left: 10px;
 }
 .sidebar-list li a i {
-  font-size: 25px;
+  font-size: 22px;
   margin-right: 5px;
   color: #FFEA20;
   transition: color 0.5s;
@@ -84,4 +84,12 @@
   -moz-transform: translateX(-350%);
   -ms-transform: translateX(-350%);
   -o-transform: translateX(-350%);
+}
+.sidebar-list li + li + li + li + li + li + li {
+  margin-left: 40px;
+  transform: translateX(-400%);
+  -webkit-transform: translateX(-400%);
+  -moz-transform: translateX(-400%);
+  -ms-transform: translateX(-400%);
+  -o-transform: translateX(-400%);
 }

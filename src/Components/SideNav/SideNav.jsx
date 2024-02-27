@@ -12,6 +12,7 @@ const SideNav = ({sideNav,handleClick}) => {
             <li><Link to='blog' onClick={()=>handleClick()}><i className="bi bi-globe2"></i>blog</Link></li>
             <li><Link to='contact' onClick={()=>handleClick()}><i className="bi bi-envelope-heart-fill"></i>contact</Link></li>
             <li><Link to='register' onClick={()=>handleClick()}><i className="bi bi-person-add"></i>register</Link></li>
+            <li><Link to='error-404' onClick={()=>handleClick()}><i className="bi bi-emoji-frown-fill"></i>error-404</Link></li>
         </ul>
     </nav>
   )
