@@ -1,29 +1,21 @@
 import { useContext, useEffect, useState } from 'react'
 import Rating from '../../Components/Rating/Rating';
 import CartContext from '../../Components/Context/CartContext';
-import Modal from '../../Components/Modal/Modal';
 import HeadingTitle from '../../Components/HeadingTitle/HeadingTitle';
 import ProductsList from '../../Components/ProductsList/ProductsList';
 import './Shop.css'
 import Particle from '../../Components/Particle/Particle';
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
   const [products,setProducts] = useState([]);
   const [items,setItems] = useState(products);
-  const [openModal,setOpenModal] = useState(false);
   const [toggle,setToggle] = useState(false);
-  const [data,setData] = useState(null);
   const {addToCart} = useContext(CartContext);
 
   useEffect(()=>{
     fetchApi()
   },[])
-
-  // Modal Handler 
-  const openModalHandler = (item) => {
-    setOpenModal(true);
-    setData(item)
-  }
 
   async function fetchApi(){
     const response = await fetch('https://fakestoreapi.com/products');
@@ -65,10 +57,10 @@ const Shop = () => {
                   <i className="bi bi-cart-plus-fill"></i>
                   Add to Cart
                 </button>
-                <button className='product-view' onClick={()=>openModalHandler(product)}>
+                <Link to={`/product/${product.id}`} className='product-view'>
                   <i className="bi bi-eye-fill"></i>
                   View
-                </button>
+                </Link>
               </div>
             </div>
           ))}
@@ -76,7 +68,6 @@ const Shop = () => {
         ) : (      
           <ProductsList products={products}/>
         )}
-      {openModal && <Modal data={data} setOpenModal={setOpenModal}/>}
     </section>
   )
 }

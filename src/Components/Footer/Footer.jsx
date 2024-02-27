@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
-    const Links=["Home" , "Shop" , "Product" , "Blog" , "Contact" , "Register"]
+    const Links=["Home" , "Shop" , "Product" , "Blog" , "Contact" , "Register", "Error-404"]
 
   return (
     <footer className='footer'>

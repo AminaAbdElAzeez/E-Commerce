@@ -111,7 +111,8 @@
     opacity: 1;
     visibility: visible;
 }
-.our-product-item-icon button:hover i {
+.our-product-item-icon button:hover i,
+.our-products-wrapper-link:hover i {
     color: #fff;
     transition: color 0.5s;
     -webkit-transition: color 0.5s;
@@ -119,10 +120,12 @@
     -ms-transition: color 0.5s;
     -o-transition: color 0.5s;
 }
-.our-product-item-icon button:hover {
+.our-product-item-icon button:hover,
+.our-products-wrapper-link:hover {
     background-color: #966925;
 }
-.our-product-item-icon button {
+.our-product-item-icon button,
+.our-products-wrapper-link {
     width: 40px;
     height: 50px;
     cursor: pointer;
@@ -134,17 +137,21 @@
     -ms-transition: background-color 0.5s;
     -o-transition: background-color 0.5s;
 }
-.our-product-item-icon button i {
+.our-product-item-icon button i,
+.our-products-wrapper-link i {
     color: #7a5215;
 }
-.our-product-item-icon button:first-of-type {
+.our-product-item-icon button {
     border-radius: 7px 10px 0px 7px;
     -webkit-border-radius: 7px 10px 0px 7px;
     -moz-border-radius: 7px 10px 0px 7px;
     -ms-border-radius: 7px 10px 0px 7px;
     -o-border-radius: 7px 10px 0px 7px;
 }
-.our-product-item-icon button:last-of-type {
+.our-products-wrapper-link {
+    background-color: #fff;
+    text-align: center;
+    line-height: 44px;
     border-radius: 7px 0px 7px 7px;
     -webkit-border-radius: 7px 0px 7px 7px;
     -moz-border-radius: 7px 0px 7px 7px;

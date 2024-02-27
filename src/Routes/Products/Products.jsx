@@ -2,21 +2,13 @@ import { useContext, useEffect, useState } from 'react';
 import './Products.css';
 import Particle from '../../Components/Particle/Particle';
 import CartContext from '../../Components/Context/CartContext';
-import Modal from '../../Components/Modal/Modal';
 import HeadingTitle from '../../Components/HeadingTitle/HeadingTitle';
+import { Link } from 'react-router-dom';
 
 const Products = () => {
   const [search,setSearch] = useState("");
   const [products,setProducts] = useState([]);
-  const [openModal,setOpenModal] = useState(false);
-  const [data,setData] = useState(null);
   const {addToCart} = useContext(CartContext);
-
-  // Modal Handler 
-  const openModalHandler = (item) => {
-    setOpenModal(true);
-    setData(item)
-  }
 
   useEffect(()=>{
     fetchApi()
@@ -45,9 +37,9 @@ const Products = () => {
                   <button onClick={()=>addToCart({...product,quantity:1})}>
                     <i className="bi bi-cart-plus-fill"></i>
                   </button>
-                  <button onClick={()=>openModalHandler(product)}>
+                  <Link to={`/product/${product.id}`} className='our-products-wrapper-link'>
                     <i className="bi bi-eye-fill"></i>
-                  </button>
+                  </Link>
                 </div>
               </div>
               <h4 className='our-product-item-name'>{product.title.slice(0,12)}</h4>
@@ -55,7 +47,6 @@ const Products = () => {
           ))}
         </div>
       </div>
-      {openModal && <Modal data={data} setOpenModal={setOpenModal}/>}
     </section>
   )
 }

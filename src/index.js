@@ -31,7 +31,8 @@ const routes = createBrowserRouter([
       { path : "login" , element : <Login/> },
       { path : "product/:id" , element : <ProductNumber/> },
       { path : "cart" , element : <Cart/> },
-      
+      { path : "error-404" , element : <ErrorPage/> },
+    
     ]
   }
 ])

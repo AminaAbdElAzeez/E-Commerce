@@ -94,6 +94,8 @@
     top: 0px;
     width: 0px;
     height: 70px;
+    text-align: center;
+    line-height: 70px;
     border: none;
     display: block;
     font-size: 25px;
@@ -131,5 +133,6 @@
     .new-product:hover .new-view {
         height: 60px;
         width: 50px;
+        line-height: 60px;
     }
 }

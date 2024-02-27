@@ -8,21 +8,14 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 
 import { EffectCoverflow, Pagination } from 'swiper/modules';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import CartContext from '../Context/CartContext';
-import Modal from '../Modal/Modal';
+import { Link } from 'react-router-dom';
 
 
 const NewArrival = ({products}) => {
-  const [openModal,setOpenModal] = useState(false);
-  const [data,setData] = useState(null);
   const {addToCart} = useContext(CartContext);
 
-  // Modal Handler 
-  const openModalHandler = (item) => {
-    setOpenModal(true);
-    setData(item)
-  }
   return (
     <div className='new'>
       <Swiper
@@ -49,14 +42,13 @@ const NewArrival = ({products}) => {
               <i className="bi bi-cart-plus-fill"></i>
               Add to Cart
             </button>
-            <button className='new-view' onClick={()=>openModalHandler(product)}>
+            <Link to={`/product/${product.id}`} className='new-view'>
               <i className="bi bi-eye-fill"></i>
-            </button>
+            </Link>
           </div>
         </SwiperSlide>
         ))}
       </Swiper>
-      {openModal && <Modal data={data} setOpenModal={setOpenModal}/>}
     </div>
   )
 }

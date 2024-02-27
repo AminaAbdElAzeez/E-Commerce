@@ -23,9 +23,9 @@ const Contact = () => {
         <form className='contact-form' onSubmit={(e)=>e.preventDefault()}>
           <h2>Contact us Form</h2>
           <div className='contact-form-wrapper'>
-            <input type='text' placeholder='name *'/>
+            <input type='text' placeholder='name *' required/>
             <input type='text' placeholder='subject *'/>
-            <input type='email' placeholder='email *'/>
+            <input type='email' placeholder='email *' required/>
           </div>
           <textarea placeholder='your message *' rows='5'></textarea>
           <button className='contact-btn'>send</button>

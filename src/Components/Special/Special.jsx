@@ -6,20 +6,12 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 // import required modules
 import { EffectCards } from 'swiper/modules';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import CartContext from '../Context/CartContext';
-import Modal from '../Modal/Modal';
+import { Link } from 'react-router-dom';
 
 const Special = ({products}) => {
-  const [openModal,setOpenModal] = useState(false);
-  const [data,setData] = useState(null);
   const {addToCart} = useContext(CartContext);
-
-  // Modal Handler 
-  const openModalHandler = (item) => {
-    setOpenModal(true);
-    setData(item)
-  }
 
   return (
     <div className='special'>
@@ -36,14 +28,13 @@ const Special = ({products}) => {
               <button className='special-btn' onClick={()=>addToCart({...product,quantity:1})}>
                 <i className="bi bi-cart-plus-fill"></i>
               </button>
-              <button className='special-btn' onClick={()=>openModalHandler(product)}>
+              <Link to={`/product/${product.id}`} className='special-btn'>
                 <i className="bi bi-eye-fill"></i>
-              </button>
+              </Link>
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      {openModal && <Modal data={data} setOpenModal={setOpenModal}/>}
     </div>
   )
 }

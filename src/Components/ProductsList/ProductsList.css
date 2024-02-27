@@ -134,6 +134,7 @@
     display: block;
     position: relative;
     z-index: 1;
+    width: 100%;
     margin-bottom: 10px;
     border: none;
     cursor: pointer;
@@ -146,6 +147,11 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+.product-view {
+    display: block;
+    background-color: #fff;
+    text-align: center;
 }
 .product-add-to-cart > i,
 .product-view > i {

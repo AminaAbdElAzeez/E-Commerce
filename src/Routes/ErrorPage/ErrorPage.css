@@ -1,7 +1,8 @@
 .error {
     width: 100%;
     height: 100vh;
-    border: 25px solid crimson;
+    /* padding-top: 80px; */
+    /* border: 25px solid crimson; */
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -32,8 +33,8 @@
     text-align: center;
     border-radius: 50%;
     background-color: #fff;
-    animation: rotate-center 1s ease-in-out 0s infinite normal none running;
-    -webkit-animation: rotate-center 1s ease-in-out 0s infinite normal none running;
+    animation: rotate-center 2s ease-in-out 0s infinite running;
+    -webkit-animation: rotate-center 2s ease-in-out 0s infinite running;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -49,10 +50,6 @@
     color: crimson;
 }
 @keyframes rotate-center {
-			
-    0% {
-        transform:rotate(0);
-    }
     100% {
         transform:rotate(360deg);
     }
@@ -95,15 +92,6 @@
     color: #3574d1;
 }
 @media only screen and (max-width:480px) {
-    .error-404 {
-        font-size: 50px;
-    }
-    .error-404 i {
-        font-size: 45px;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-    }
     .error-title {
         font-size: 20px;
     }
@@ -114,5 +102,16 @@
     }
     .error-link {
         font-size: 18px;
+    }
+}
+@media only screen and (max-width:300px) {
+    .error-404 {
+        font-size: 70px;
+    }
+    .error-404 i {
+        font-size: 60px;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
     }
 }
